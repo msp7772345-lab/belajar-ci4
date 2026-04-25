@@ -17,3 +17,12 @@ $routes->get('pengguna/(:num)', 'Beranda::pengguna/$1');
 
 // Halaman waktu
 $routes->get('waktu', 'Beranda::waktu');
+
+// Route untuk Sistem Informasi Akademik
+$routes->get('akademik', 'Akademik::index');
+
+// Route untuk daftar mata kuliah
+$routes->get('akademik/matkul', 'Akademik::matkul');
+
+// Route untuk nilai mahasiswa dengan parameter NIM
+$routes->get('akademik/nilai/(:segment)', 'Akademik::nilai/$1');
