@@ -22,3 +22,5 @@ $routes->get('akademik/matkul', 'Akademik::matkul');
 $routes->get('akademik/nilai/(:segment)', 'Akademik::nilai/$1');
 // Route controller Demo
 $routes->get('demo', 'Demo::index');
+
+$routes->get('/profil', 'Profil::index');

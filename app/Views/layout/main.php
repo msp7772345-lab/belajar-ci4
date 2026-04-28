@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/css/custom.css') ?>">
+    
 </head>
 <body>
     <!-- NAVBAR -->
@@ -38,6 +39,11 @@
                             <i class="bi bi-info-circle"></i> Tentang
                         </a>
                     </li>
+                    <li class="nav-item">
+    <a class="nav-link <?= str_contains(current_url(), '/profil') ? 'active' : '' ?>" href="<?= base_url('profil') ?>">
+        <i class="bi bi-person"></i> Profil
+    </a>
+</li>
                 </ul>
                 <div class="navbar-nav">
                     <?php if (session()->get('logged_in')): ?>
