@@ -24,3 +24,5 @@ $routes->get('akademik/nilai/(:segment)', 'Akademik::nilai/$1');
 $routes->get('demo', 'Demo::index');
 
 $routes->get('/profil', 'Profil::index');
+
+$routes->get('/galeri', 'Galeri::index');

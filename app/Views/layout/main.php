@@ -44,6 +44,11 @@
         <i class="bi bi-person"></i> Profil
     </a>
 </li>
+<li class="nav-item">
+    <a class="nav-link" href="<?= base_url('galeri') ?>">
+        <i class="bi bi-images"></i> Galeri
+    </a>
+</li>
                 </ul>
                 <div class="navbar-nav">
                     <?php if (session()->get('logged_in')): ?>
