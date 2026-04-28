@@ -1,5 +1,6 @@
 <?= $this->extend('layout/main') ?>
 <?= $this->section('content') ?>
+<?php helper('profile'); ?>
 
 <style>
     body {
@@ -79,9 +80,9 @@
 
             <!-- Header -->
             <div class="profile-header">
-                <div class="profile-avatar">
-                    <?= strtoupper(substr(esc($nama), 0, 1)) ?>
-                </div>
+<div class="profile-avatar overflow-hidden p-0">
+    <img src="<?= avatar_url($nama) ?>" class="w-100 h-100 rounded-circle">
+</div>
                 <h4><?= esc($nama) ?></h4>
                 <small><?= esc($prodi) ?> • Angkatan <?= esc($angkatan) ?></small>
             </div>
